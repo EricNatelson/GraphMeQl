@@ -1,0 +1,12 @@
+
+type Query {
+    hello: String,
+    name: String,
+    introduction: String,
+    education: [Education]
+}
+    type Education {
+    university: String,
+    major: String,
+    minor: String,
+}
