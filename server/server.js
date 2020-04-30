@@ -14,10 +14,11 @@ const app = express()
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'client/build')));
-
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.send("Welcome to GraphMeQL");
+
+  // Will serve the static build of the React client
+  // res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.use('/graphql', express_graphql({ 
@@ -26,5 +27,5 @@ app.use('/graphql', express_graphql({
   graphiql: true 
 }));
 
-const port = 8080
+const port = 8000
 app.listen(port, () => console.log(`Running a GraphQL API server at localhost:${port}/graphql`));
