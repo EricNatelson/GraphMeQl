@@ -1,14 +1,37 @@
-# build environment
-FROM node:12.2.0-alpine as build
-WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
-COPY package.json /app/package.json
-RUN npm install --silent
-COPY . /app
-RUN npm run build
+## Docker-Compose settings # build environment
+# FROM node:12.2.0-alpine as build
+# WORKDIR /app
+# ENV PATH /app/node_modules/.bin:$PATH
+# COPY package.json /app/package.json
+# RUN npm install --silent
+# COPY . /app
+# RUN npm run build
 
-# production environment
-FROM nginx:1.16.0-alpine
-COPY --from=build /app/build /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# # production environment
+# FROM nginx:1.16.0-alpine
+# COPY --from=build /app/build /usr/share/nginx/html
+# EXPOSE 80
+# CMD ["nginx", "-g", "daemon off;"]
+
+
+
+# Kubernetes attempt Dockerfile
+# base image
+FROM node:10-alpine
+
+# set working directory
+WORKDIR /usr/src/app
+
+# install and cache app dependencies
+COPY package*.json ./
+ADD package.json /usr/src/app/package.json
+RUN npm install
+
+# Bundle app source
+COPY . .
+
+# Specify port
+EXPOSE 3000
+
+# start app
+CMD ["npm", "start"]

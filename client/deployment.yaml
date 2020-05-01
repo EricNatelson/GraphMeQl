@@ -1,0 +1,47 @@
+# kind: Service
+# apiVersion: v1
+# metadata:
+#   name: graphmeql
+# spec:
+#   type: NodePort
+#   ports:
+#     - port: 80
+#       targetPort: 80
+#       protocol: TCP
+#       nodePort: 31000
+#   selector:
+#     app: graphmeql
+# ---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graphql-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: graphql-client
+  template:
+    metadata:
+      labels:
+        app: graphql-client
+    spec:
+      containers:
+        - name: graphql-client
+          image: graphql-client:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: graphql-client
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: graphql-client

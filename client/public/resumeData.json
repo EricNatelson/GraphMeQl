@@ -3,9 +3,9 @@
     "name":"Eric Natelson",
     "occupation":"Full Stack Software Engineer",
     "description":"Experienced full stack Software Engineer with a demonstrated history of working in the financial services industry",
-    "description_two": "This website is a dockerized app built with Node.js, GraphQL, and React. The source code can be viewed in my GitHub (Project name: GraphMeQl)",
+    "description_two": "This website is a multi container docker-composed app built with Node.js, GraphQL, and React. The source code can be viewed in my GitHub (Project name: GraphMeQl)",
     "image":"profilepic.jpg",
-    "bio":"I am a board sports enthusiast with an itch for technology. When I'm not coding I'm usually riding my OneWheel.",
+    "bio":"Floridian transplant in Texas, I am a water sports, fishing, and all things outdoors enthusiast. Coding is a hobby and my job so please reach out if you are looking to collaborate on an idea!",
     "contactmessage":"If you would like to chat you can reach me below",
     "email": "natelsoneric@gmail.com",
     "phone": "7277989453",
@@ -71,13 +71,29 @@
         "company":"Fidelity Investments",
         "title":"Software Engineer",
         "years":"October 2018 - Present",
-        "description":"Full stack development of cloud ready applications utilizing Spring-Boot, Angular, and SQL that support the net asset value, pricing, and accounting of all Fidelity funds"
+        "description":"Full stack development of cloud ready applications utilizing Spring-Boot, Angular, and Oracle SQL that support the net asset value, pricing, and accounting of all Fidelity funds"
       },
       {
         "company":"Fidelity Investments Leap Program",
         "title":"Associate Software Engineer",
         "years":"June 2018 - Obctober 2018",
-        "description":"17 week training program where I was taught and assessed and various programming and software engineering principles to smooth the transition from college to full time software engineer"
+        "description": "17 week training program where I was taught and assessed on various programming and software engineering principles to smooth the transition from college to full time software engineer"
+      }
+    ],
+    "certifications": [
+      {
+        "title":"Certified Scrum Master (CSM)",
+        "company":"Scrum Alliance",
+        "date": "03/09/2020",
+        "url":"https://certification.scrumalliance.org/accounts/944207-eric-natelson/certifications/1070867-csm",
+        "description": "Attend an in-person course taught by a Certified Scrum Trainer® (CST®) to become a Certified Scrum Master."
+      },
+      {
+        "title":"Certified Product Owner (CSPO)",
+        "company":"Scrum Alliance",
+        "date": "06/05/2019",
+        "url":"https://bcert.me/bc/html/show-badge.html?b=zjdvkjiq",
+        "description": "Attend an in-person course taught by a Certified Scrum Trainer® (CST®) to become a Certified Product Owner."
       }
     ],
     "skills":[
@@ -106,7 +122,7 @@
         "level":"60%"
       },
       {
-        "name":"Docker",
+        "name":"Docker & Kubernetes",
         "level":"50%"
       }
     ]
@@ -116,13 +132,13 @@
       {
         "title":"Cryptofluence",
         "category":"Financial Services",
-        "image":"canadian-wanderlust.jpg",
+        "image":"cryptofluence.png",
         "url":"https://github.com/EricNatelson/cryptofluence"
       },
       {
         "title":"Resume Website",
         "category":"A React based resume website",
-        "image":"resume-website.jpg",
+        "image":"resume-website.png",
         "url":"https://github.com/EricNatelson/GraphMeQl"
       }
     ]
