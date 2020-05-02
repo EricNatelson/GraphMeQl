@@ -30,11 +30,10 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+RUN npm run build
+
 # Specify port
 EXPOSE 8080
-
-# Create latest build
-CMD [ "npm", "run-script", "build" ]
 
 # start app
 CMD [ "npm", "run-script", "serve" ]

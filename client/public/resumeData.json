@@ -3,7 +3,7 @@
     "name":"Eric Natelson",
     "occupation":"Full Stack Software Engineer",
     "description":"with a demonstrated history of working in the financial services industry",
-    "description_two": "This website is built with Node.js, GraphQL, and React and deployed using Azure Kubernetes Service. The source code can be viewed in my GitHub (Project name: GraphMeQl)",
+    "description_two": "This website is built with Node.js, GraphQL, and React deployed using Azure Kubernetes Service. The source code can be viewed in my GitHub",
     "image":"profilepic.jpg",
     "bio":"Floridian transplant in Texas, I am a water sports, fishing, and all things outdoors enthusiast. Coding is a hobby and my job so please reach out if you are looking to collaborate on an idea!",
     "contactmessage":"If you would like to chat you can reach me below",
@@ -27,11 +27,6 @@
         "name":"twitter",
         "url":"http://twitter.com/Computer_Ric",
         "className":"fa fa-twitter"
-      },
-      {
-        "name":"google-plus",
-        "url":"http://googleplus.com/tbakerx",
-        "className":"fa fa-google-plus"
       },
       {
         "name":"linkedin",
