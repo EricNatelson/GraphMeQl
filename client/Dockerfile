@@ -31,7 +31,10 @@ RUN npm install
 COPY . .
 
 # Specify port
-EXPOSE 3000
+EXPOSE 8080
+
+# Create latest build
+CMD [ "npm", "run-script", "build" ]
 
 # start app
-CMD ["npm", "start"]
+CMD [ "npm", "run-script", "serve" ]

@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: graphql-client
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: graphql-client
@@ -29,19 +29,29 @@ spec:
     spec:
       containers:
         - name: graphql-client
-          image: graphql-client:latest
+          image: azurefridayacr.azurecr.io/graphql-client:latest
           imagePullPolicy: Always
-          ports:
-            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              port: 8080
+              path: /
+          livenessProbe:
+            httpGet:
+              port: 8080
+              path: /
+          # ports:
+          #   - containerPort: 8080
       restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: graphql-client
+  name: graphql-client-loadbalancer
 spec:
   type: LoadBalancer
-  ports:
-  - port: 80
   selector:
     app: graphql-client
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
