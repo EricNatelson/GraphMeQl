@@ -46,8 +46,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-resource-group: AzureFridayAKS
   name: graphql-client-loadbalancer
 spec:
+  loadBalancerIP: 52.151.245.159
   type: LoadBalancer
   selector:
     app: graphql-client
