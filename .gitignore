@@ -12,8 +12,7 @@
 /coverage
 
 # production
-/server/build
-/client/build
+/build
 
 # misc
 .DS_Store
