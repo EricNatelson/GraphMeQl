@@ -3,7 +3,7 @@
     "name":"Eric Natelson",
     "occupation":"Full Stack Software Engineer",
     "description":"with a demonstrated history of working in the financial services industry",
-    "description_two": "This website is built with Node.js, GraphQL, and React deployed using Azure Kubernetes Service. The source code can be viewed in my GitHub",
+    "description_two": "This website is built with React. The source code can be viewed in my GitHub",
     "image":"profilepic.jpg",
     "bio":"Floridian transplant in Texas, I am a water sports, fishing, and all things outdoors enthusiast. Coding is a hobby and my job so please reach out if you are looking to collaborate on an idea!",
     "contactmessage":"If you would like to chat you can reach me below",
@@ -34,7 +34,6 @@
         "className":"fa fa-linkedin"
       },
       {
-
         "name":"instagram",
         "url":"http://instagram.com/",
         "className":"fa fa-instagram"
@@ -43,11 +42,6 @@
         "name":"github",
         "url":"http://github.com/EricNatelson",
         "className":"fa fa-github"
-      },
-      {
-        "name":"skype",
-        "url":"http://skype.com",
-        "className":"fa fa-skype"
       }
     ]
   },
@@ -64,15 +58,21 @@
     "work":[
       {
         "company":"Fidelity Investments",
-        "title":"Software Engineer",
-        "years":"October 2018 - Present",
-        "description":"Full stack development of cloud ready applications utilizing Spring-Boot, Angular, and Oracle SQL that support the net asset value, pricing, and accounting of all Fidelity funds"
+        "title":"Software Engineer Developer",
+        "years":"December 2019 - Present",
+        "description":"Full stack development of cloud ready applications utilizing Spring-Boot, Angular, and SQL centered around the net asset value, pricing, and accounting of all Fidelity funds."
+      },
+      {
+        "company":"Fidelity Investments",
+        "title":"Associate Software Engineer",
+        "years":"October 2018 - December 2019",
+        "description": "Developed and maintained features for Fidelity Fund Investment Operations applications centered around the net asset value, pricing, and accounting of all Fidelity funds as well as taking on the Scrum Master role for my team."
       },
       {
         "company":"Fidelity Investments Leap Program",
         "title":"Associate Software Engineer",
-        "years":"June 2018 - Obctober 2018",
-        "description": "17 week training program where I was taught and assessed on various programming and software engineering principles to smooth the transition from college to full time software engineer"
+        "years":"June 2018 - October 2018",
+        "description": "17 week training program where I was taught and assessed on various programming and software engineering principles to smooth the transition from college to full time software engineer."
       }
     ],
     "certifications": [
